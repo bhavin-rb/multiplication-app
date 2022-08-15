@@ -63,8 +63,21 @@ function resetScore(){
         }
    // Updates the score after resetting it to ZERO
     scoreEl.innerText = `score: ${score}`;
+    document.getElementById("remarks").innerHTML = "";
          
   }   
+// Adding Remarks after certain scores
+  if(score >= 5 && score < 10){
+    document.getElementById("remarks").innerHTML = "Great! Keep going.";
+  }else if(score >= 10 && score < 15){
+    document.getElementById("remarks").innerHTML = "Excellent!";
+  }else if(score >= 15 && score <= 19){
+    document.getElementById("remarks").innerHTML = "You are Genius!";
+  }else if(score > 19){
+    document.getElementById("remarks").innerHTML = "Sky is the limit...";
+  }else{
+    document.getElementById("remarks").innerHTML = "";
+  }
 //   Reset the score to ZERO when browser window is closed or re-loaded
 sessionStorage.removeItem("score");
 
