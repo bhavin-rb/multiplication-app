@@ -62,7 +62,7 @@ function resetScore(){
             score = 0;
         }
    // Updates the score after resetting it to ZERO
-    scoreEl.innerText = `score: ${data}`;
+    scoreEl.innerText = `score: ${score}`;
          
   }   
 //   Reset the score to ZERO when browser window is closed or re-loaded
