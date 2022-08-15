@@ -3,8 +3,8 @@
 
 // generate random number between 1 and 10
 // The Math.ceil () function always rounds a number up to the next largest integer
-const num1 = Math.ceil(Math.random() * 10);
-const num2 = Math.ceil(Math.random() * 10);
+const num1 = Math.ceil(Math.random() * 12);
+const num2 = Math.ceil(Math.random() * 12);
 
 const questionEl = document.getElementById("question");
 const formEl = document.getElementById("form");
